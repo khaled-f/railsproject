@@ -1,0 +1,6 @@
+<%= form_for @animal, url: {action: "save_animal"} do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :image %>
+ 
+  <%= f.submit "Create" %>
+<% end %>

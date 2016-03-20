@@ -1,0 +1,15 @@
+<h1>Cats#index</h1>
+<p>Find me in app/views/cats/index.html.erb</p>
+
+<h1>This many cats: <%= @cats_in_html %> </h1>
+
+<div>
+  <%= while (@cats_in_html != 0) do %>
+      <img src='https://45.media.tumblr.com/6b52bce5723d89b9df196fa9021cb21f/tumblr_nw0lr1Mqmn1ttovh1o1_500.gif'/>
+      <h1>cat number: <%= @cats_in_html %></h1>
+  <% @cats_in_html = @cats_in_html - 1
+     end %>
+
+</div>
+
+<h1>  <%= @warning %> </h1>
