@@ -1,5 +1,6 @@
 class AnimalsController < ApplicationController
   def view_animal
+  	@animals = Animal.all
   end
 
   def save_animal

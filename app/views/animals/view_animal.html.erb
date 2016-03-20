@@ -1,2 +1,5 @@
-<h1>Animals#view_animal</h1>
-<p>Find me in app/views/animals/view_animal.html.erb</p>
+<% @animals.each do |animal| %> 
+ name: <%= animal.name %>
+ image: <img src="<%= animal.image %>">
+  
+<% end %>
